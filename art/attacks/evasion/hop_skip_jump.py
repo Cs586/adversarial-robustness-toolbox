@@ -299,8 +299,10 @@ class HopSkipJump(EvasionAttack):
                 return adv_init.astype(ART_NUMPY_DTYPE), init_pred
 
             # Attack unsatisfied yet and the initial image unsatisfied
+            init_image = 
+            # 兩個class的其中一個
             for _ in range(self.init_size):
-                random_img = nprd.uniform(clip_min, clip_max, size=x.shape).astype(x.dtype)
+                random_img = init_image
 
                 if mask is not None:
                     random_img = random_img * mask + x * (1 - mask)
